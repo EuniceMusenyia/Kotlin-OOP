@@ -20,6 +20,9 @@ fun main() {
 
     var car = Car("Honda", "Fit", "KDG004B", 0)
 
+    var agesstats= AgeStats(15, 4,20.0,3.0,5.0)
+    println(agecalc(Array<67>))
+
 }
 class Car(var make: String, var model: String, var registaration: String, var speed: Int){
     fun start(){
@@ -54,8 +57,9 @@ data class Book(var title:String, var author: String, var pages: Int, var year: 
         var min = ages.min()
         var average = ages.average()
 
-//        var stats = AgeStats(max, min, )
-        return  average
+        var stats = AgeStats(max, min, average )
+        return  stats
+
     }
 
 
